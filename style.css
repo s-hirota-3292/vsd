@@ -108,7 +108,7 @@ body {
 .box1{
   background-color:gold;
   display: flex;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
 }
 .soundList {
@@ -134,6 +134,8 @@ body {
   position: relative;
   top:10%;  
   left: 10%;
+  font-size: large;
+  font-weight: bold;
 }
 
 .HR-DOWN-Botton{
@@ -142,18 +144,26 @@ body {
   height: 35px;
   position: relative;  
   top:10%;  
-  left: 30%;  
+  left: 20%;  
+  font-size: large;
+  font-weight: bold;
 }
 
 .HRValue{
-  display: inline;
+  display: inline-block;
   background-color: honeydew;
   border-style: solid;
-  border-color: gray;
-  position: relative;
-  width: 50px;
+  border-color:gray;
+  width: 40px;
+  height: auto;
+  position: relative;  
   top:10%;  
-  left:20%; 
+  left:15%; 
+  text-align: center;
+  padding:1px ;
+  vertical-align: middle;
+  font-size: large;
+  font-weight: bold; 
 }
 
 .soundList-text {
