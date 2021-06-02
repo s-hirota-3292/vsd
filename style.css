@@ -28,8 +28,8 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
 }
 
 .player-timer-btn {
