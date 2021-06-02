@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>バイタルドッグアプリ</title>
+</head>
+
+<body>
+  <section class="player">
+    <p class="appname">VitalSignDog Simulator</p>
+    <audio class="song" src="sounds/Normal/01-120.mp3" loop></audio>
+    <div class="player-timer">
+      
+
+      <!-- Track outline -->
+      <svg class="player-timer-circle player-timer-track-circle" width="220" height="220" viewBox="0 0 220 220"
+        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="110" cy="110" r="108.5" stroke="white" stroke-width="3" />
+      </svg>
+
+      <!-- Moving outline -->
+      <!-- <svg class="player-timer-circle player-timer-moving-circle" width="220" height="220" viewBox="0 0 220 220"
+        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="110" cy="110" r="108.5" stroke="#B7B7B7" stroke-width="3" />
+      </svg> -->
+
+      <!-- Play svg -->
+      <img src="svg/play.svg" alt="" class="player-timer-btn" />
+      <!-- <h3 class='timeDisplay'>0:00</h3> -->
+
+    </div>
+
+  </section>
+  <section class="headline1">
+
+    <!-- <span class="selection-bar"></span> -->
+
+    <div class="title">
+      <p class="title-headline">Normal</p>
+      <p class="title-description">正常心音</p>
+    </div>
+
+  </section>
+
+  
+  <!-- <section class="selection"> -->
+  <!-- </section> -->
+<div class="box1">
+
+    <div class="soundList">
+      <p class="Select_Text">心拍数選択</p>
+
+      <div id="Normal" class="soundList-item" data-sound="sounds/Normal/01-120.mp3" data-image="img/road.jpg" data-time="120">
+        <img src="img/heart.jpeg" alt="" class="soundList-image" />
+        <div class="soundList-text">
+          <span class="soundList-title">Normal</span>
+          <span class="soundList-description">正常心音</span>
+        </div>
+      </div>
+      
+      <div id="MR" class="soundList-item" data-sound="sounds/MR/02-120.mp3" data-image="img/ocean.jpg" data-time="60">
+        <img src="img/heart.jpeg" alt="" class="soundList-image" />
+        <div class="soundList-text">
+          <span class="soundList-title">MR</span>
+          <span class="soundList-description">僧帽弁狭窄</span>
+        </div>
+      </div>
+
+      <div id="AS" class="soundList-item" data-sound="sounds/AS/03-120.mp3" data-image="img/night-forest.jpg"
+        data-time="180">
+        <img src="img/heart.jpeg" alt="" class="soundList-image" />
+        <div class="soundList-text">
+          <span class="soundList-title">AS</span>
+          <span class="soundList-description">大動脈弁狭窄</span>
+        </div>
+      </div>
+
+      <div id="PSD" class="soundList-item" data-sound="sounds/PSD/04-120.mp3" data-image="img/heart.jpeg"
+        data-time="180">
+        <img src="img/heart.jpeg" alt="" class="soundList-image" />
+        <div class="soundList-text">
+          <span class="soundList-title">PSD</span>
+          <span class="soundList-description">動脈管開存</span>
+        </div>
+      </div>
+    </div>
+
+  
+  <div class="HeartRateArea">
+    <p class="Select_Text">症例選択</p>
+  <button class="HR-UP-Botton">＋</button>
+  <div class="HRValue" id="HR-Count">120</div>
+  <button class="HR-DOWN-Botton">－</button>
+  </div>
+
+</div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

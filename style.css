@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+}
+.appname{
+  position: relative;
+  top: 8vh;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+.player {
+  /* background-image: url('img/dog.jpg'); */
+  background-color: dimgray;
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.player-timer {
+  position: relative;
+  height: 60vh;
+}
+
+.player-timer-circle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  height: 220px;
+  width: 220px;
+}
+
+.player-timer-btn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-54%, -50%);
+  height: 50px;
+  width: 50px;
+}
+
+.timeDisplay {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-weight: 100;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+.headline1{
+  background-color: rgb(152, 128, 240);
+  width: 100%;
+  height: auto;  
+  text-align: center;
+  border-radius: 24px;
+}
+
+.selection {
+  background-color: lightcoral;
+  /* background-color: #fff; */
+  display: flex;  
+
+
+  width: 50%;
+  height: calc(50vh + 20px);
+  /* border-radius: 24px; */
+  position: relative;
+  /* top: -20px; */
+  /* padding-left: 1.5rem;
+  padding-right: 1.5rem; */
+  box-sizing: border-box;
+
+}
+
+.title {
+  /* background-color: maroon; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+.selection-bar {
+    background-color: #757575;
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    margin-top: 20px;
+}
+
+.title-headline {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.title-description {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: .8rem;
+  text-align: center;
+}
+
+.box1{
+  background-color:gold;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+}
+.soundList {
+  background-color: lawngreen;
+  margin: 0px;
+  height: auto;
+  width: 50%;
+}
+.Select_Text{
+  margin: 0;
+  text-align: center;
+}
+
+.HeartRateArea{
+  background-color: deeppink;
+  width: 50%;
+}
+
+.HR-UP-Botton{
+  border-radius:20%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top:10%;  
+  left: 10%;
+}
+
+.HR-DOWN-Botton{
+  border-radius: 20%;
+  width: 35px;
+  height: 35px;
+  position: relative;  
+  top:10%;  
+  left: 40%;  
+}
+.HRValue{
+  display: inline;
+  background-color: honeydew;
+  border-style: solid;
+  border-color: gray;
+  position: relative;
+  width: 50px;
+  top:10%;  
+  left:25%; 
+}
+
+.soundList-text {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+}
+
+.soundList-image {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.soundList-item {
+  /* background-color: goldenrod; */
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.soundList-title {
+  /* background-color: khaki; */
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+}
+
+.soundList-description {
+  font-size: 0.7rem;
+  display: block;
+  /* color: #c7c7c7; */
+  color: #333;
+}
