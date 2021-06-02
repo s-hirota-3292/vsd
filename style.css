@@ -136,6 +136,7 @@ body {
   left:10%;
   font-size: large;
   font-weight: bold;
+  text-align: center;
 }
 
 .HR-DOWN-Botton{
@@ -147,6 +148,7 @@ body {
   left: 20%;  
   font-size: large;
   font-weight: bold;
+  text-align: center;
 }
 
 .HRValue{
