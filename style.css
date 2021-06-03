@@ -53,11 +53,10 @@ body {
 }
 
 .headline1{
-  background-color: rgb(152, 128, 240);
+  background-color: dimgray;
   width: 100%;
   height: auto;  
   text-align: center;
-  border-radius: 24px;
 }
 
 .selection {
@@ -75,9 +74,11 @@ body {
 }
 
 .title {
-  /* background-color: maroon; */
+  background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
+  /* border-radius: 24px; */
+  border-radius: 24px 24px 0 0;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
 
@@ -107,25 +108,29 @@ body {
 }
 
 .box1{
-  background-color:gold;
+  /* background-color:gold; */
   display: flex;
   height: 48vh;
   width: 100%;
+
 }
 .soundList {
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
   margin: 0px;
   height: auto;
   width: 50%;
+  /* border: 2px solid #757575; */
 }
 .Select_Text{
   margin: 0;
+  margin-bottom: 5px;
   text-align: center;
 }
 
 .HeartRateArea{
-  background-color: deeppink;
+  /* background-color: deeppink; */
   width: 50%;
+  /* border: 2px solid #757575; */
 
 }
 

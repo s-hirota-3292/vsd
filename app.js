@@ -8,9 +8,10 @@ const app = () => {
   // const outlineLength = outline.getTotalLength();
   // const timeDisplay = document.querySelector('.timeDisplay');
 
-
+  let CaseDefault = "";
   let SetCase = 1;
   let HRValue = 120;
+  let HRValue_String = 120;
   const HRUpBtn = document.querySelector('.HR-UP-Botton');
   const HRDOWNBtn = document.querySelector('.HR-DOWN-Botton');
 
@@ -37,78 +38,84 @@ const app = () => {
   const TestEvent = () => {
 
     HRUpBtn.addEventListener('click', () => {
-      console.log(SetCase);
-      song.pause();
-      playBtn.src = 'svg/play.svg';
+
+      // 心拍数更新
       if (HRValue < 200) HRValue = HRValue + 10;
+      HRValue_String = ('000' + HRValue).slice(-3);
       document.getElementById("HR-Count").textContent = HRValue;
+      console.log(SetCase);
+      switch (SetCase) {
+        case 1:
+          CaseDefault = "sounds/Normal/01-" + HRValue_String + '.mp3';
+          break;
+        case 2:
+          CaseDefault = "sounds/MR/02-" + HRValue_String + '.mp3';
+          break;
+        case 3:
+          CaseDefault = "sounds/AS/03-" + HRValue_String + '.mp3';
+          break;
+        case 4:
+          CaseDefault = "sounds/PSD/04-" + HRValue_String + '.mp3';
+          break;
+      }
 
-      if (HRValue == 60) song.src = "sounds/Normal/01-060.mp3";
-      if (HRValue == 70) song.src = "sounds/Normal/01-070.mp3";
-      if (HRValue == 80) song.src = "sounds/Normal/01-080.mp3";
-      if (HRValue == 90) song.src = "sounds/Normal/01-090.mp3";
-      if (HRValue == 100) song.src = "sounds/Normal/01-100.mp3";
-      if (HRValue == 110) song.src = "sounds/Normal/01-110.mp3";
-      if (HRValue == 120) song.src = "sounds/Normal/01-120.mp3";
-      if (HRValue == 120) song.src = "sounds/Normal/01-120.mp3";
-      if (HRValue == 130) song.src = "sounds/Normal/01-130.mp3";
-      if (HRValue == 140) song.src = "sounds/Normal/01-140.mp3";
-      if (HRValue == 150) song.src = "sounds/Normal/01-150.mp3";
-      if (HRValue == 160) song.src = "sounds/Normal/01-160.mp3";
-      if (HRValue == 170) song.src = "sounds/Normal/01-170.mp3";
-      if (HRValue == 180) song.src = "sounds/Normal/01-180.mp3";
-      if (HRValue == 190) song.src = "sounds/Normal/01-190.mp3";
-      if (HRValue == 200) song.src = "sounds/Normal/01-200.mp3";
-
-      song.play();
-      playBtn.src = 'svg/stop.svg';
-
+      if (song.paused) {
+        //何もしない
+      } else {
+        song.src = CaseDefault;
+        console.log(CaseDefault);
+        CaseDefault = "";
+        song.play();
+        playBtn.src = 'svg/stop.svg';
+      }
 
     });
 
     HRDOWNBtn.addEventListener('click', () => {
-      song.pause();
-      playBtn.src = 'svg/play.svg';
+
       if (HRValue > 60) HRValue = HRValue - 10;
+      HRValue_String = ('000' + HRValue).slice(-3);
       document.getElementById("HR-Count").textContent = HRValue;
+      CaseDefault = "sounds/Normal/01-" + HRValue_String + '.mp3';
 
-      if (HRValue == 60) song.src = "sounds/Normal/01-060.mp3";
-      if (HRValue == 70) song.src = "sounds/Normal/01-070.mp3";
-      if (HRValue == 80) song.src = "sounds/Normal/01-080.mp3";
-      if (HRValue == 90) song.src = "sounds/Normal/01-090.mp3";
-      if (HRValue == 100) song.src = "sounds/Normal/01-100.mp3";
-      if (HRValue == 110) song.src = "sounds/Normal/01-110.mp3";
-      if (HRValue == 120) song.src = "sounds/Normal/01-120.mp3";
-      if (HRValue == 120) song.src = "sounds/Normal/01-120.mp3";
-      if (HRValue == 130) song.src = "sounds/Normal/01-130.mp3";
-      if (HRValue == 140) song.src = "sounds/Normal/01-140.mp3";
-      if (HRValue == 150) song.src = "sounds/Normal/01-150.mp3";
-      if (HRValue == 160) song.src = "sounds/Normal/01-160.mp3";
-      if (HRValue == 170) song.src = "sounds/Normal/01-170.mp3";
-      if (HRValue == 180) song.src = "sounds/Normal/01-180.mp3";
-      if (HRValue == 190) song.src = "sounds/Normal/01-190.mp3";
-      if (HRValue == 200) song.src = "sounds/Normal/01-200.mp3";
+      switch (SetCase) {
+        case 1:
+          CaseDefault = "sounds/Normal/01-" + HRValue_String + '.mp3';
+          break;
+        case 2:
+          CaseDefault = "sounds/MR/02-" + HRValue_String + '.mp3';
+          break;
+        case 3:
+          CaseDefault = "sounds/AS/03-" + HRValue_String + '.mp3';
+          break;
+        case 4:
+          CaseDefault = "sounds/PSD/04-" + HRValue_String + '.mp3';
+          break;
+      }
 
-      song.play();
-      playBtn.src = 'svg/stop.svg';
+      if (song.paused) {
+        //何もしない
+      } else {
+        song.src = CaseDefault;
+        console.log(CaseDefault);
+        CaseDefault = "";
+        song.play();
+        playBtn.src = 'svg/stop.svg';
+      }
     });
 
 
     document.getElementById('Normal').addEventListener('click', () => {
       SetCase = 1;
-      console.log("Nomal select");
     });
     document.getElementById('MR').addEventListener('click', () => {
       SetCase = 2;
-      console.log("MR select");
     });
     document.getElementById('AS').addEventListener('click', () => {
       SetCase = 3;
-      console.log("AS select");
     });
     document.getElementById('PSD').addEventListener('click', () => {
       SetCase = 4;
-      console.log("PSD select");
     });
 
   }
@@ -122,13 +129,10 @@ const app = () => {
 
   const checkPlaying = () => {
     if (song.paused) {
-    // if (song.stop) {
-
       song.play();
       playBtn.src = 'svg/stop.svg';
     } else {
       song.pause();
-      // song.stop();
       playBtn.src = 'svg/play.svg';
     }
   };
@@ -150,7 +154,8 @@ const app = () => {
         const imageUrl = this.getAttribute('data-image');
         const title = this.querySelector('.soundList-title').innerText;
         const description = this.querySelector('.soundList-description').innerText;
-        const songData = this.getAttribute('data-sound');;
+        // const songData = this.getAttribute('data-sound');
+        const songData = this.getAttribute('data-sound') + HRValue_String + '.mp3';
         currentDuration = parseInt(this.getAttribute('data-time'));
         currentTime = 0;
         // minutes = Math.floor(currentDuration / 60);
@@ -160,8 +165,10 @@ const app = () => {
         setPlayerText(title, description, currentDuration);
         // setTimerText(minutes, seconds);
 
-        // song.play();
-        // playBtn.src = 'svg/stop.svg';
+        console.log(songData);
+
+        song.play();
+        playBtn.src = 'svg/stop.svg';
       });
     });
   };
