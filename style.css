@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 .appname{
   position: relative;
@@ -108,7 +109,7 @@ body {
 .box1{
   background-color:gold;
   display: flex;
-  height: 40vh;
+  height: 48vh;
   width: 100%;
 }
 .soundList {
@@ -125,6 +126,7 @@ body {
 .HeartRateArea{
   background-color: deeppink;
   width: 50%;
+
 }
 
 .HR-UP-Botton{
