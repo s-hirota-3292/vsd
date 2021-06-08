@@ -1,8 +1,13 @@
+html{
+  touch-action: manipulation;
+}
+
 body {
   margin: 0;
   overflow-x: hidden!important;
 }
 .app-title{
+  background-color: coral;
   position: relative;
   top: 5vh;
   text-align: center;
@@ -177,7 +182,7 @@ body {
   position: relative;
   font-weight: bold;
   text-align: center;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .HR-DOWN-Botton{
