@@ -3,39 +3,33 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-
   <link rel="stylesheet" href="./style.css" />
   <title>バイタルドッグアプリ</title>
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
 
 </head>
 
 <body>
   <section class="player">
-    <p class="app-title">VitalSignDog Simulator</p>
+
+    <div class="decription-area">
+      <!-- <a href="sounds.zip" download="vsd_sounds" class="downbtn">download</a>       -->
+      <p class="downbtn" id="downbtnID" >download
+      </p>
+      <p class="app-title">VitalSignDog Simulator</p>
+    </div>
+
     <audio class="song" src="sounds/Normal/01-120.mp3" loop></audio>
     <div class="player-timer">
 
 
-      <!-- Track outline -->
       <svg class="player-timer-circle player-timer-track-circle" width="220" height="220" viewBox="0 0 220 220"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="110" cy="110" r="108.5" stroke="white" stroke-width="3" />
       </svg>
 
-      <!-- Moving outline -->
-      <!-- <svg class="player-timer-circle player-timer-moving-circle" width="220" height="220" viewBox="0 0 220 220"
-        fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="110" cy="110" r="108.5" stroke="#B7B7B7" stroke-width="3" />
-      </svg> -->
 
-      <!-- Play svg -->
       <img src="svg/play.svg" alt="" class="player-timer-btn" />
-      <!-- <h3 class='timeDisplay'>0:00</h3> -->
 
     </div>
 
@@ -97,7 +91,6 @@
 
   </section>
 
-  <!-- <a href="sounds.zip"download="vsd_sounds">download</a> -->
 
   <script src="./app.js"></script>
 </body>

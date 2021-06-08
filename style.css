@@ -3,13 +3,26 @@ body {
   margin: 0;
   overflow-x: hidden!important;
 }
+
+.decription-area{
+background-color: darkblue;
+
+}
 .app-title{
-  /* background-color: coral; */
+  background-color: coral;
   position: relative;
-  top: 5vh;
+  /* top: 5vh; */
   text-align: center;
   color: #fff;
   margin: 0;
+}
+.downbtn{
+
+  color:#FFF;
+  position: relative;
+  text-align: right;
+  margin: 0;
+
 }
 .player {
   /* background-image: url('img/dog.jpg'); */
@@ -141,7 +154,7 @@ body {
 }
 
 .soundList-description {
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   display: block;
   color: #333;
   /* font-weight: bold; */
