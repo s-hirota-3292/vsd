@@ -175,25 +175,25 @@ body {
 }
 
 .HR-UP-Botton{
-
+  -webkit-appearance:none;
   width: calc(100% / 3) ;
   height: auto;
   position: relative;
   font-weight: bold;
   text-align: center;
   font-size: 25px;
-  margin-left: 10px;;
+  /* margin-left: 10px;; */
 }
 
 .HR-DOWN-Botton{
-
+  -webkit-appearance:none;
   width: calc(100% / 3) ;
   height:auto;
   position: relative;  
   font-weight: bold;
   text-align: center;
   font-size: 25px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .HRValue{
