@@ -168,7 +168,7 @@ body {
 }
 
 .HeartRateArea{
-  background-color: deeppink;
+  /* background-color: deeppink; */
   display: flex;
   align-items: center;
 
@@ -176,6 +176,10 @@ body {
 
 .HR-UP-Botton{
   -webkit-appearance:none;
+  border-style: solid;
+  border-width: 2.5px;
+  border-color:black;
+    
   width: calc(100% / 3) ;
   height: auto;
   position: relative;
@@ -187,6 +191,10 @@ body {
 
 .HR-DOWN-Botton{
   -webkit-appearance:none;
+  border-style: solid;
+  border-width: 2.5px;
+  border-color:black;
+
   width: calc(100% / 3) ;
   height:auto;
   position: relative;  
