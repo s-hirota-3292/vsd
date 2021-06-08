@@ -65,9 +65,7 @@ body {
   display: flex;  
   width: 50%;
   height: calc(50vh + 20px);
-  /* border-radius: 24px; */
   position: relative;
-  /* top: -20px; */
   /* padding-left: 1.5rem;
   padding-right: 1.5rem; */
   box-sizing: border-box;
@@ -77,7 +75,6 @@ body {
   background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* border-radius: 24px; */
   border-radius: 24px 24px 0 0;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
@@ -112,14 +109,12 @@ body {
   display: flex;
   height: 48vh;
   width: 100%;
-
 }
 .soundList {
-  /* background-color: lawngreen; */
+  background-color: lawngreen;
   margin: 0px;
   height: auto;
   width: 50%;
-  /* border: 2px solid #757575; */
 }
 .Select_Text{
   margin: 0;
@@ -128,7 +123,7 @@ body {
 }
 
 .HeartRateArea{
-  /* background-color: deeppink; */
+  background-color: deeppink;
   width: 50%;
   /* border: 2px solid #757575; */
 
@@ -136,43 +131,42 @@ body {
 
 .HR-UP-Botton{
   border-radius:20%;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   position: relative;
-  top:20%;  
-  left:10%;
-  font-size: large;
+  /* top:20%;   */
+  /* left:70%; */
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
 
 .HR-DOWN-Botton{
+
   border-radius: 20%;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   position: relative;  
-  top:20%;  
-  left: 20%;  
-  font-size: large;
+  /* top:20%;   */
+  /* left: 30%;   */
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
+
 }
 
 .HRValue{
-  display: inline-block;
+  display: table-cell; /* IE8から使用可能 */
+  vertical-align: middle; 
+  text-align: center;
   background-color: honeydew;
   border-style: solid;
   border-color:gray;
-  width: 40px;
-  height: auto;
   position: relative;  
-  top:20%;  
-  left:15%; 
-  text-align: center;
-  padding:1px ;
-  vertical-align: middle;
-  font-size: large;
-  font-weight: bold; 
+  width: 100px;
+  height: 50px;
+  font-size: 40px;
+
 }
 
 .soundList-text {
@@ -182,13 +176,12 @@ body {
 .soundList-image {
   width: 30px;
   height: 30px;
-  /* border-radius: 50%; */
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .soundList-item {
-  /* background-color: goldenrod; */
+  background-color: goldenrod;
   width: 50vw;
   display: flex;
   align-items: center;
@@ -196,7 +189,7 @@ body {
 }
 
 .soundList-title {
-  /* background-color: khaki; */
+  background-color: khaki;
   font-size: 1rem;
   font-weight: bold;
   display: block;
@@ -205,6 +198,5 @@ body {
 .soundList-description {
   font-size: 0.7rem;
   display: block;
-  /* color: #c7c7c7; */
   color: #333;
 }
