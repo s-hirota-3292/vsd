@@ -168,46 +168,43 @@ body {
 }
 
 .HeartRateArea{
-  /* background-color: deeppink; */
+  background-color: deeppink;
   display: flex;
   align-items: center;
 
 }
 
 .HR-UP-Botton{
-  /* background-color:aqua; */
-  /* border-radius:20%; */
-  /* width: 40px; */
+
   width: calc(100% / 3) ;
   height: auto;
   position: relative;
   font-weight: bold;
   text-align: center;
   font-size: 25px;
+  margin-left: 10px;;
 }
 
 .HR-DOWN-Botton{
 
-  /* border-radius: 10%; */
-  /* width: 40px; */
   width: calc(100% / 3) ;
   height:auto;
   position: relative;  
   font-weight: bold;
   text-align: center;
   font-size: 25px;
+  margin-right: 10px;
 }
 
 .HRValue{
-  display: table-cell; /* IE8から使用可能 */
-  vertical-align: middle; 
+  /* display: table-cell; IE8から使用可能 */
+  /* vertical-align: middle;  */
   text-align: center;
   background-color: honeydew;
   border-style: solid;
   border-width: 2.5px;
   border-color:black;
   position: relative;  
-  /* width: 80px; */
   width: calc(100% / 3) ;
   height: auto;
   font-size: 20px;
