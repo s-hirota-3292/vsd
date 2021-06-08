@@ -105,13 +105,13 @@ body {
 }
 
 .box1{
-  background-color:gold;
+  /* background-color:gold; */
   display: flex;
   height: 48vh;
   width: 100%;
 }
 .soundList {
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
   margin: 0px;
   height: auto;
   width: 50%;
@@ -120,51 +120,6 @@ body {
   margin: 0;
   margin-bottom: 5px;
   text-align: center;
-}
-
-.HeartRateArea{
-  background-color: deeppink;
-  width: 50%;
-
-}
-
-.HR-UP-Botton{
-  background-color:aqua;
-  border-radius:20%;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  /* top:20%;   */
-  font-weight: bold;
-  text-align: center;
-}
-
-.HR-DOWN-Botton{
-
-  border-radius: 20%;
-  width: 40px;
-  height: 40px;
-  position: relative;  
-  /* top:20%;   */
-  /* left: 30%;   */
-  /* font-size: 30px; */
-  font-weight: bold;
-  text-align: center;
-
-}
-
-.HRValue{
-  display: table-cell; /* IE8から使用可能 */
-  vertical-align: middle; 
-  text-align: center;
-  background-color: honeydew;
-  border-style: solid;
-  border-color:gray;
-  position: relative;  
-  width: 80px;
-  height: 40px;
-  font-size: 25px;
-
 }
 
 .soundList-text {
@@ -179,7 +134,7 @@ body {
 }
 
 .soundList-item {
-  background-color: goldenrod;
+  /* background-color: goldenrod; */
   width: 50vw;
   display: flex;
   align-items: center;
@@ -187,7 +142,7 @@ body {
 }
 
 .soundList-title {
-  background-color: khaki;
+  /* background-color: khaki; */
   font-size: 1rem;
   font-weight: bold;
   display: block;
@@ -198,4 +153,54 @@ body {
   display: block;
   color: #333;
   /* font-weight: bold; */
+}
+
+.control1 {
+  /* background-color:chocolate; */
+  margin: 0px;
+  height: auto;
+  width: 50%; 
+}
+
+.HeartRateArea{
+  /* background-color: deeppink; */
+  display: flex;
+  align-items: center;
+
+}
+
+.HR-UP-Botton{
+  /* background-color:aqua; */
+  border-radius:20%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.HR-DOWN-Botton{
+  border-radius: 20%;
+  width: 40px;
+  height: 40px;
+  position: relative;  
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.HRValue{
+  display: table-cell; /* IE8から使用可能 */
+  vertical-align: middle; 
+  text-align: center;
+  background-color: honeydew;
+  border-style: solid;
+  border-color:gray;
+  position: relative;  
+  width: 80px;
+  height: auto;
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
