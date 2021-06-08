@@ -7,7 +7,7 @@ body {
   overflow-x: hidden!important;
 }
 .app-title{
-  background-color: coral;
+  /* background-color: coral; */
   position: relative;
   top: 5vh;
   text-align: center;
@@ -64,18 +64,6 @@ body {
   text-align: center;
 }
 
-.selection {
-  background-color: lightcoral;
-  /* background-color: #fff; */
-  display: flex;  
-  width: 50%;
-  height: calc(50vh + 20px);
-  position: relative;
-  /* padding-left: 1.5rem;
-  padding-right: 1.5rem; */
-  box-sizing: border-box;
-}
-
 .title {
   background-color: white;
   padding-top: 10px;
@@ -109,7 +97,7 @@ body {
   text-align: center;
 }
 
-.box1{
+.selection{
   /* background-color:gold; */
   display: flex;
   height: 48vh;
@@ -121,10 +109,11 @@ body {
   height: auto;
   width: 50%;
 }
-.Select_Text{
+.case_hr_text{
   margin: 0;
   margin-bottom: 5px;
   text-align: center;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;  
 }
 
 .soundList-text {
@@ -176,18 +165,16 @@ body {
 
 .HR-UP-Botton{
   -webkit-appearance:none;
-
   border-style: solid;
   border-width: 2px;
-  border-color:black;
-
+  border-color:#333;
   width: calc(100% / 3) ;
   height: 40px;
   position: relative;
   font-weight: bold;
   text-align: center;
   font-size: 25px;
-  /* margin-left: 10px;; */
+  margin-left: 5px;
 }
 
 .HR-DOWN-Botton{
@@ -195,15 +182,14 @@ body {
 
   border-style: solid;
   border-width: 2px;
-  border-color:black;
-
+  border-color:#333;
   width: calc(100% / 3) ;
   height:40px;
   position: relative;  
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
-  /* margin-right: 10px; */
+  font-size: 25px;  
+  margin-right: 5px;
 }
 
 .HRValue{
@@ -213,7 +199,7 @@ body {
   background-color: honeydew;
   border-style: solid;
   border-width: 2px;
-  border-color:black;
+  border-color:#333;
   position: relative;  
   width: calc(100% / 3) ;
   height: 40px;
