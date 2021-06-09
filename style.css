@@ -4,26 +4,25 @@ body {
   overflow-x: hidden!important;
 }
 
-.decription-area{
-background-color: darkblue;
 
-}
-.app-title{
-  background-color: coral;
-  position: relative;
-  /* top: 5vh; */
-  text-align: center;
-  color: #fff;
-  margin: 0;
-}
 .downbtn{
-
   color:#FFF;
   position: relative;
   text-align: right;
   margin: 0;
 
 }
+.app-title{
+  /* background-color: coral; */
+  position: relative;
+  /* top: 5vh; */
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  top: 10%;
+
+}
+
 .player {
   /* background-image: url('img/dog.jpg'); */
   background-color: dimgray;
